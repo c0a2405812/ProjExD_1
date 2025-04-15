@@ -21,6 +21,7 @@ def main():
 
         x = tmr #ren6
         screen.blit(bg_img, [-x, 0]) #ren3  #ren6
+        screen.blit(bg_img, [-x+1600,0]) #ren7
         screen.blit(kk_img, [300,200]) #ren4
         pg.display.update()
         tmr += 1        
