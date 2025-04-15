@@ -19,7 +19,7 @@ def main():
         for event in pg.event.get():
             if event.type == pg.QUIT: return
 
-        screen.blit(bg_img, [0, 0]) #ren3
+        screen.blit(bg_img, [-tmr, 0]) #ren3  #ren6
         screen.blit(kk_img, [300,200]) #ren4
         pg.display.update()
         tmr += 1        
