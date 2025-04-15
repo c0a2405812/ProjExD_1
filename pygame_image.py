@@ -19,11 +19,13 @@ def main():
         for event in pg.event.get():
             if event.type == pg.QUIT: return
 
-        screen.blit(bg_img, [-tmr, 0]) #ren3  #ren6
+        x = tmr #ren6
+        screen.blit(bg_img, [-x, 0]) #ren3  #ren6
         screen.blit(kk_img, [300,200]) #ren4
         pg.display.update()
         tmr += 1        
         clock.tick(200) #ren5
+        
 
 
 if __name__ == "__main__":
