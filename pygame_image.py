@@ -20,7 +20,7 @@ def main():
         for event in pg.event.get():
             if event.type == pg.QUIT: return
 
-        x = tmr #ren6
+        x = tmr%3200 #ren6
         screen.blit(bg_img, [-x, 0]) #ren3  #ren6
         screen.blit(bg_img2, [-x+1600,0]) #ren7
         screen.blit(bg_img, [-x+3200, 0]) #ren9
@@ -29,8 +29,8 @@ def main():
         tmr += 1        
         clock.tick(200) #ren5
 
-        if tmr == 3199: #ren9
-            tmr = 0
+        # if tmr == 3199: #ren9
+        #     tmr = 0
         
 
 
