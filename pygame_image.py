@@ -23,10 +23,14 @@ def main():
         x = tmr #ren6
         screen.blit(bg_img, [-x, 0]) #ren3  #ren6
         screen.blit(bg_img2, [-x+1600,0]) #ren7
+        screen.blit(bg_img, [-x+3200, 0]) #ren9
         screen.blit(kk_img, [300,200]) #ren4
         pg.display.update()
         tmr += 1        
         clock.tick(200) #ren5
+
+        if tmr == 3199: #ren9
+            tmr = 0
         
 
 
